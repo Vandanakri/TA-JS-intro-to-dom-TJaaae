@@ -45,6 +45,12 @@ for(let i = 0; i < array.length; i++){
 return list;
 }
 
+function createList(data = []) {
+  let html = `<ul>
+  ${data.map((ele) => `<li>${ele}</li>`).join('')}
+  </ul>`;
+  return html
+}
 // TEST
 createList(['ALABAMA', 'ALASKA', 'HAWAII', 'KENTUCKY']);
 createList(['Afghanistan', 'Antarctica', 'Congo', 'Estonia']);
@@ -62,6 +68,18 @@ createList(['Afghanistan', 'Antarctica', 'Congo', 'Estonia']);
 */
 
 // Your code goes here
+function createTodoList(data = []){
+  let html = `<ul>
+  ${data.map((todo) => `<li>
+  <p>${todo.name}</p>
+  <input type="checkbox" ${
+    todo.isDone ? "checked" : ""
+  } checked name="" id="">
+  <span>X</span>
+</li>`).join('')}
+  </ul>`;
+  return html
+}
 
 
 // TEST
