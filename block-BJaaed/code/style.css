@@ -1,0 +1,14 @@
+h1{
+  font-size: 35px;
+  background-color: rgb(55,126,128);
+  color: rgb(253,253,84);
+  text-align: center;
+  padding: 20px;
+}
+
+.parent{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+
+}
